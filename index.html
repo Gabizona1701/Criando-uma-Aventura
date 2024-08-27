@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Investigando um Desaparecimento</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="investigacao-passo0.jpg" alt="">
+            <p>Um dia desses vi uma reportagem sobre o desaparecimento de uma garota chamada Myrian e, como uma boa detetive amadora, decidi procurar por pistas em Cuba e tentar achá-la...</p>
+            <button class="btn-proximo" data-proximo="1">Cienfuegos</button>
+            <button class="btn-proximo" data-proximo="2">Matanzas</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada ao amanhecer em Cienfuegos. A primeira pista pode ser encontrada no local em que Myrian foi vista por último, no Jardim Botânico da cidade.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar pistas no Jardim Botânico</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Sua jornada começa ao amanhecer em Matanzas, você decide procurar pelos lugares que Myrian costumava visitar.</p>
+            <p>Para onde você vai?</p>
+            <button class="btn-proximo" data-proximo="1">Ir para o bar Cabaret Continental</button>
+            <button class="btn-proximo" data-proximo="2">Ir para a loja de charutos La Casa Del Habano</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
