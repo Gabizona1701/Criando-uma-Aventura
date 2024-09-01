@@ -1,34 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Investigando um Desaparecimento</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title></title>
 </head>
+
 <body>
     <main>
         <div class="passo ativo" id="passo-0">
-            <img src="investigacao-passo0.jpg" alt="">
-            <p>Um dia desses vi uma reportagem sobre o desaparecimento de uma garota chamada Myrian e, como uma boa detetive amadora, decidi procurar por pistas em Cuba e tentar achá-la...</p>
-            <button class="btn-proximo" data-proximo="1">Cienfuegos</button>
-            <button class="btn-proximo" data-proximo="2">Matanzas</button>
+            <img src="img/investigacao-passo0.jpg" alt="">
+            <p>Um dia desses vi uma reportagem sobre o desaparecimento de uma garota chamada Myrian e, como uma boa
+                detetive amadora, decidi procurar por pistas em Cuba e tentar achá-la...</p>
+            <button class="btn-proximo" data-proximo="17">Cienfuegos</button>
+            <button class="btn-proximo" data-proximo="1">Matanzas</button>
         </div>
         <div class="passo" id="passo-1">
-            <p>Você começa sua jornada ao amanhecer em Cienfuegos. A primeira pista pode ser encontrada no local em que Myrian foi vista por último, no Jardim Botânico da cidade.</p>
-            <button class="btn-proximo" data-proximo="3">Procurar pistas no Jardim Botânico</button>
-            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+            <p>Sua jornada começa ao amanhecer em Matanzas, você decide procurar pelos lugares que Myrian costumava
+                visitar. Para onde você vai?</p>
+            <button class="btn-proximo" data-proximo="2">Ir para o bar Cabaret Continental</button>
+            <button class="btn-proximo" data-proximo="3">Ir para a loja de charutos La Casa Del Habano</button>
         </div>
         <div class="passo" id="passo-2">
-            <p>Sua jornada começa ao amanhecer em Matanzas, você decide procurar pelos lugares que Myrian costumava visitar.</p>
-            <p>Para onde você vai?</p>
-            <button class="btn-proximo" data-proximo="1">Ir para o bar Cabaret Continental</button>
-            <button class="btn-proximo" data-proximo="2">Ir para a loja de charutos La Casa Del Habano</button>
+            <p>O bar estava vazio quando você chegou, havia apenas o cantinero e uma cliente um tanto suspeita.</p>
+            <button class="btn-proximo" data-proximo="4">Conversar com o cantinero</button>
+            <button class="btn-proximo" data-proximo="5">Conversar com cliente suspeita</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>A loja estava fechada, porém você encontrou alguém que te deu informações importantes...</p>
+            <button class="btn-proximo" data-proximo="6">Conversar com o desconhecido</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Ele lhe disse que fazia alguns dias que não via Myrian e que ela costumava ir visitá-los frequentimente.
+                Infelizmente não havia mais nada relevante para a investigação.</p>
+            <button class="btn-proximo" data-proximo="5">conversar com cliente suspeita</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Ela foi bem enigmática. Disse que tinha certeza de que era alguém da família que a sequestrou e
+                provavelmente você iria encontrar mais informações na casa de Myrian. Por fim, ela te deu a localização.
+            </p>
+            <button class="btn-proximo" data-proximo="10">ir para o local</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>“Chica, la tía de Myrian es una de las sospechosas, es florista. Pero será mejor que busques a su
+                madre...”</p>
+            <button class="btn-proximo" data-proximo="10">ir para o local</button>
+            <button class="btn-proximo" data-proximo="11">traduzir</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>“Moça, a tia da Myrian é uma das suspeitas, ela é florista. Mas é melhor você procurar a mãe dela...”</p>
+            <button class="btn-proximo" data-proximo="10">ir para o local</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Com a localização em mãos, você decide fazer uma visita e, quem sabe, descobrir mais coisas.</p>
+            <button class="btn-proximo" data-proximo="12">...</button>
+        </div>
+        <div class="passo" id="passo-12">
+            <p>A casa estava trancada e vazia, então você decide invadir através da janela.</p>
+            <button class="btn-proximo" data-proximo="14">...</button>
+        </div>
+        <div class="passo" id="passo-14">
+            <p>Você decide olhar o quarto de Myrian antes de qualquer outra coisa.
+                Perto de sua cama havia uma foto recentemente revelada, o local não era desconhecido</p>
+            <button class="btn-proximo" data-proximo="15">Ir até o local na fotografia</button>
+        </div>
+        <div class="passo" id="passo-15">
+            <p>O local era um galpão conhecido como “Venganza Sanguinaria”, pois muitas pessoas eram levadas até lá para
+                serem mortas, como uma “vingança”.</p>
+            <button class="btn-proximo" data-proximo="16">...</button>
+        </div>
+        <div class="passo" id="passo-16">
+            <p>De repente você escuta um grito estridente, podia até jurar ser Myrian se fechasse os olhos por um
+                momento</p>
+            <button class="btn-proximo" data-proximo="25">entrar</button>
+            <button class="btn-proximo" data-proximo="0">Voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-17">
+            <p>Você começa sua jornada ao amanhecer em Cienfuegos. A primeira pista pode ser encontrada no local em que
+                Myrian foi vista por último, no Jardim Botânico da cidade.</p>
+            <button class="btn-proximo" data-proximo="18">Procurar pistas no Jardim Botânico</button>
+            <button class="btn-proximo" data-proximo="19">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-18">
+            <p>Andando por uma trilha, você encontra um pedaço de papel indicando um local desconhecido...</p>
+            <button class="btn-proximo" data-proximo="20">Ir para o local desconhecido</button>
+        </div>
+        <div class="passo" id="passo-19">
+            <p>Você decide que Myrian e a polícia podem se virar sozinhos e volta para casa, mas sempre se pergunta quem
+                poderia ser seu sequestrador.</p>
+            <button class="btn-proximo" data-proximo="0">voltar para o inicio</button>
+        </div>
+        <div class="passo" id="passo-20">
+            <p>O local é um típico parque abandonado. Muitas das atrações foram destruídas e apenas duas inteiras
+                restaram.</p>
+            <button class="btn-proximo" data-proximo="21">cabana tarot</button>
+            <button class="btn-proximo" data-proximo="22">caverna sombria</button>
+        </div>
+        <div class="passo" id="passo-21">
+            <p>O interior da cabana está repleta de imagens de Myrian destraída, como se estivessem investigando-a a
+                muito tempo.</p>
+            <button class="btn-proximo" data-proximo="23">Analizar fotografias</button>
+        </div>
+        <div class="passo" id="passo-22">
+            <p>A caverna é escura demais e pode ser de alto risco continuar, porém você pode sentir o cheiro metálico de
+                sangue.</p>
+            <button class="btn-proximo" data-proximo="20">Voltar para a entrada do circo</button>
+            <button class="btn-proximo" data-proximo="24">Ir em frente, pois pode haver pistas precioas</button>
+        </div>
+        <div class="passo" id="passo-24">
+            <p>Infelizmente você caiu em um buraco e se machucou feio. O melhor a se fazer é voltar para casa.
+                Você perdeu! ):</p>
+            <button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-23">
+            <p>Você encontra uma foto tirada recentemente: a imagem mostra Myrian amarrada em um local que você
+                reconhece.</p>
+            <button class="btn-proximo" data-proximo="20">voltar para a entrada do circo</button>
+            <button class="btn-proximo" data-proximo="15">Ir até o local na fotografia</button>
+        </div>
+        <div class="passo" id="passo-15">
+            <p>O local era um galpão conhecido como “Venganza Sanguinaria”, pois muitas pessoas eram levadas até lá para
+                serem mortas, como uma “vingança”.</p>
+            <button class="btn-proximo" data-proximo="16">...</button>
+        </div>
+        <div class="passo" id="passo-16">
+            <p>De repente você escuta um grito estridente, podia até jurar ser Myrian se fechasse os olhos por um
+                momento</p>
+            <button class="btn-proximo" data-proximo="25">entrar</button>
+            <button class="btn-proximo" data-proximo="0">Voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-25">
+            <p>O galpão não era muito escuro mas, ainda assim, era sombrio.
+                Você sentia cheiro de sangue enquanto caminhava em direção aos gritos cada vez mais agudos.</p>
+            <button class="btn-proximo" data-proximo="26">...</button>
+        </div>
+        <div class="passo" id="passo-26">
+            <p>Ao chegar em um ambiente mais amplo, você percebe que havia duas pessoas além de Myrian.</p>
+            <button class="btn-proximo" data-proximo="27">...</button>
+        </div>
+        <div class="passo" id="passo-27">
+            <p>Ela estava amarrada e com um pano na boca, enquanto sua tía e teu padre, ambos armados, sussurravam uma
+                briga. Pareciam aflitos sobre o que fazer, pois a polícia estava perto de encontrá-los.</p>
+            <button class="btn-proximo" data-proximo="28">Ligar para a polícia e relatar onde Myrian está</button>
+            <button class="btn-proximo" data-proximo="29">Invadir o local e confrontar os dois</button>
+            <button class="btn-proximo" data-proximo="30">Desistir de ajudar Myrian, é perigoso demais e isso é função
+                da polícia.</button>
+        </div>
+        <div class="passo" id="passo-28">
+            <p>A polícia chega alguns minutos depois e consegue impedir os sequestradores.
+                Aparentemente Myrian ficaria com toda herança de sua abuela, por isso sua família planejou sequestrá-la.
+            </p>
+            <button class="btn-proximo" data-proximo="31">...</button>
+        </div>
+        <div class="passo" id="passo-31">
+            <p>Como recompensa pela sua ajuda, você recebeu uma homenagem pela sua bravura e coragem, além de
+                R$15.000,00 de Myrian como agradecimento...</p>
+            <button class="btn-proximo" data-proximo="32">Misterio resolvido</button>
+        </div>
+        <div class="passo" id="passo-32">
+            <p>PARABÉNS, VOCÊ DESVENDOU O MISTÉRIO E SALVOU A VIDA DE ALGUÉM!!!</p>
+            <button class="btn-proximo" data-proximo="0">jogar novamente</button>
+        </div>
+        <div class="passo" id="passo-29">
+            <p>Infelizmente sua coragem não foi o suficiente. Você foi baleado e corre risco de vida junto com Myrian.
+                Você perdeu! ):
+            </p>
+            <button class="btn-proximo" data-proximo="0">Tentar novamente</button>
+        </div>
+        <div class="passo" id="passo-30">
+            <p>Ao sair do galpão, a policia aparece.
+                Infelizmente você não conseguiu explicar corretamente o que estava fazendo ali...</p>
+            <button class="btn-proximo" data-proximo="33">...</button>
+        </div>
+        <div class="passo" id="passo-33">
+            <p>Você foi preso juntamente com a família de Myrian.
+                Você perdeu! ):
+            </p>
+            <button class="btn-proximo" data-proximo="0">tentar novamente</button>
         </div>
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
